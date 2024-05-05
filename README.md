@@ -3,7 +3,7 @@
 The QubicMine.Pro HiveOs Miner.
 Use URL in HiveOs flight sheet:
 <br>
-https://github.com/hackerby888/qubic-hiveos-miner/releases/download/v1.9.6b/qprominer-1.9.6b.tar.gz
+https://github.com/hackerby888/qpro-hiveos-miner/releases/download/v1.9.6b/qprominer-1.9.6b.tar.gz
 
 ## :warning: HiveOs Mandatory Installation Instructions
 
@@ -60,7 +60,7 @@ Extra config arguments exemple:
 ### Miner Configuration
 
 -   **Miner name:** Automatically filled with the installation URL.
--   **Installation URL:** `https://github.com/hackerby888/qubic-hiveos-miner/releases/download/v1.9.6b/qprominer-1.9.6b.tar.gz`
+-   **Installation URL:** `https://github.com/hackerby888/qpro-hiveos-miner/releases/download/v1.9.6b/qprominer-1.9.6b.tar.gz`
 -   **Hash algorithm:** Not used, leave as `----`.
 -   **Wallet and worker template:** Not used.
 -   **Pool URL:** Use `https://mine.qubicmine.pro/` for the pool.
