@@ -49,8 +49,8 @@ get_log_time_diff() {
 log_basename="/var/log/miner/custom/custom"
 log_name="$log_basename.log"
 log_head_name="${log_basename}_head.log"
-cpu_conf_name="/hive/miners/custom/qubminer/cpu/qubicmine.json"
-gpu_conf_name="/hive/miners/custom/qubminer/gpu/qubicmine.json"
+cpu_conf_name="/hive/miners/custom/qprominer/cpu/qubicmine.json"
+gpu_conf_name="/hive/miners/custom/qprominer/gpu/qubicmine.json"
 
 custom_version=$(grep -Po "(?<=Starting Client ).*" "$log_name" | tail -n1)
 gpu_runner=$(grep -Po "(?<=cuda version ).*(?= is)" "$log_name" | tail -n1)
