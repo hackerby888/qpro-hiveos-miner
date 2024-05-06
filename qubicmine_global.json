@@ -1,7 +1,7 @@
 ﻿{
   "Settings": {
     "baseUrl": "https://mine.qubicmine.pro/",
-    "amountOfThreads": 1,
+    "amountOfThreads": 0,
     "payoutId": null,
     "alias": null,
     "trainer": { "gpu": true, "gpuVersion": "CUDA12"}
