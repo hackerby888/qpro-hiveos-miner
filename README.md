@@ -20,6 +20,10 @@ https://github.com/hackerby888/qpro-hiveos-miner/releases/download/v1.9.6b/qprom
 
 <br>
 
+> [!IMPORTANT]
+> AMD Version was tested with hiveos version `6.1.0-hiveos` and AMD drivers `5.7.3`. Please take this as minimum requirenments.
+> AMD Version is currently only allowed in `qubic.li CPU/GPU Mining (Fixed Reward 85%)`
+
 ### GPU mining:
 
 Extra config arguments exemple:
