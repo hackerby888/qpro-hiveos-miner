@@ -65,7 +65,7 @@ Extra config arguments exemple:
 -   **Miner name:** Automatically filled with the installation URL.
 -   **Installation URL:** `https://github.com/hackerby888/qpro-hiveos-miner/releases/download/v1.9.6b/qprominer-1.9.6b.tar.gz`
 -   **Hash algorithm:** Not used, leave as `----`.
--   **Wallet and worker template:** Not used.
+-   **Wallet and worker template:** Not used leave as `q`.
 -   **Pool URL:** Use `https://mine.qubicmine.pro/` for the pool.
 -   **Pass:** Not used.
 -   **Extra config arguments:** Each line is merged into `qubicmine.json`.
