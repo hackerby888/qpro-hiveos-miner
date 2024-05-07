@@ -1,6 +1,6 @@
-# Qpro HiveOs Miner
+# QubicMine.Pro | HiveOs Miner
 
-The QubicMine.Pro HiveOs Miner.
+The qpro-miner HiveOs .
 Use URL in HiveOs flight sheet:
 <br>
 https://github.com/hackerby888/qpro-hiveos-miner/releases/download/v1.9.6b/qprominer-1.9.6b.tar.gz
