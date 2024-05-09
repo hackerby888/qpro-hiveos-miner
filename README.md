@@ -17,7 +17,8 @@ https://github.com/hackerby888/qpro-hiveos-miner/releases/download/v1.9.6b/qprom
 -   RAM >= 16Go improves CPU it/s
 -   Higher RAM frequencies improves CPU it/s
 -   Do not overload your CPUs with threads, instead, aim to find the sweetpoint
-  
+
+## :warning: Checking and Upgrade Tutorial
 - The CPU where you run the Client must support AVX2 or AVX512 CPU instructions.
 ```sh
 cat /proc/cpuinfo | grep avx2
