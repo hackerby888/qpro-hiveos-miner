@@ -28,7 +28,7 @@ https://github.com/hackerby888/qpro-hiveos-miner/releases/download/v1.9.6b/qprom
 Extra config arguments exemple:
 
 **Sample Configuration for AMD GPU's**
-![Flight Sheet CPU](/img/gpu_amd.png)
+![Flight Sheet CPU](/img/amd.png)
 
 ```
 "trainer": {"gpu":true,"gpuVersion": "AMD"}
@@ -37,7 +37,7 @@ Extra config arguments exemple:
 ```
 
 **Sample Configuration for NVIDIA GPU's**
-![Flight Sheet CPU](/img/gpu_cuda.png)
+![Flight Sheet CPU](/img/cuda.png)
 
 ```
 "trainer": {"gpu":true,"gpuVersion": "CUDA12"}
@@ -48,7 +48,7 @@ Extra config arguments exemple:
 ### CPU mining:
 
 Extra config arguments exemple:
-![Flight Sheet CPU](/img/new_cpu.png)
+![Flight Sheet CPU](/img/cpu.png)
 
 ```
 "cpuOnly":"yes"
