@@ -81,12 +81,12 @@ fi
 
 # Additional check in the Settings for only CPU mining
 if [[ $(jq '.cpuOnly == "yes"' <<< "$Settings") == false ]]; then
-  SettingsGpu=$(jq '.alias |= . + "" | .trainer.cpu = false | .trainer.gpu = true |  .amountOfThreads = 0 | del(.hugePages)' <<< "$Settings")
+  SettingsGpu=$(jq '.alias |= . + "xGPU" | .trainer.cpu = false | .trainer.gpu = true |  .amountOfThreads = 0 | del(.hugePages)' <<< "$Settings")
   echo "{\"Settings\":$SettingsGpu}" | jq . > "/hive/miners/custom/$CUSTOM_NAME/gpu/qubicmine.json"
 fi
 
 # Additional check and modification in the Settings for CPU mining
 if [[ $(jq '.cpuOnly == "yes" or .amountOfThreads != 0' <<< "$Settings") == true ]]; then
-  Settings=$(jq '.alias |= . + "" | .trainer.cpu = true | .trainer.gpu = false | .allowHwInfoCollect = false | del(.overwrites.CUDA)' <<< "$Settings")
+  Settings=$(jq '.alias |= . + "xCPU" | .trainer.cpu = true | .trainer.gpu = false | .allowHwInfoCollect = false | del(.overwrites.CUDA)' <<< "$Settings")
   echo "{\"Settings\":$Settings}" | jq . > "/hive/miners/custom/$CUSTOM_NAME/cpu/qubicmine.json"
 fi
