@@ -105,7 +105,7 @@ if [ "$diffTime" -lt "$maxDelay" ]; then
   echo ----------
 
   if [[ $gpu_count -ge 0 ]]; then
-    gpu_hs=`cat $log_name | tail -n 50 | grep "^GPU" | grep "Try " | tail -n 1 | cut -d " " -f20`
+    gpu_hs=`cat $log_name | tail -n 50 | grep "^GPU" | grep "Try " | tail -n 1 | cut -d " " -f14`
     gpu_found=`cat $log_name | tail -n 50 | grep "^GPU" | grep "Try " | tail -n 1 | cut -d " " -f6 | cut -d "/" -f1`
     gpu_submit=`cat $log_name | tail -n 50 | grep "^GPU" | grep "Try " | tail -n 1 | cut -d " " -f6 | cut -d "/" -f2`
     gpu_temp=$(jq '.temp' <<< "$gpu_stats")
@@ -141,10 +141,10 @@ if [ "$diffTime" -lt "$maxDelay" ]; then
     fi
   fi
   if [[ $cpu_count -ge 0 ]]; then
-    cpu_hs=`cat $log_name | tail -n 50 | grep "^CPU" | grep "Try " | tail -n 1 | cut -d " " -f20`
+    cpu_hs=`cat $log_name | tail -n 50 | grep "^CPU" | grep "Try " | tail -n 1 | cut -d " " -f14`
     cpu_found=`cat $log_name | tail -n 50 | grep "^CPU" | grep "Try " | tail -n 1 | cut -d " " -f6 | cut -d "/" -f1`
     cpu_submit=`cat $log_name | tail -n 50 | grep "^CPU" | grep "Try " | tail -n 1 | cut -d " " -f6 | cut -d "/" -f2`
-    hs[$gpu_count]=`cat $log_name | tail -n 50 | grep "^CPU" | grep "Try " | tail -n 1 | cut -d " " -f20`
+    hs[$gpu_count]=`cat $log_name | tail -n 50 | grep "^CPU" | grep "Try " | tail -n 1 | cut -d " " -f14`
     temp[$gpu_count]="$cpu_temp"
     fan[$gpu_count]=""
     bus_numbers[$gpu_count]="null"
