@@ -126,7 +126,6 @@ Extra config arguments exemple:
 
 | Setting | Description                                                                                                                                                                                                                                  |
 | ---- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-                                                                                                                                                 |
 | ```"payoutId":``` | This is the ID you want to get token payout for your found solutions.                                                                                                                                                                        |
 | ```"hugePages":nnnn``` | Depending on your environment you might want to enable huge pages. This can increase your iterations per second. The trainer will tell you what is the optimal setting when it detects a wrong value. The number depends on the number of threads: nb_threads * 52 (e.g., 16 * 52 = 832). If trainer is unstable please remove. |
 |  ```"overwrites": {"AVX512": false}``` | Disable AVX512 and enforce AVX2 (AVX Intel CPU not working)                                                                                                                                                                                  |
