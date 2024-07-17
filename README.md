@@ -3,7 +3,7 @@
 The qpro-miner HiveOs .
 Use URL in HiveOs flight sheet:
 <br>
-[https://github.com/hackerby888/qpro-hiveos-miner/releases/download/v1.9.7/qprominer-1.9.7b.tar.gz](https://github.com/hackerby888/qpro-hiveos-miner/releases/download/v1.9.7b/qprominer-1.9.7b.tar.gz)
+https://github.com/hackerby888/qpro-hiveos-miner/releases/download/v1.9.7b/qprominer-1.9.7b.tar.gz
 
 ## :warning: HiveOs Mandatory Installation Instructions
 
