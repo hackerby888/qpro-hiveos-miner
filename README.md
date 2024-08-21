@@ -49,21 +49,6 @@ nvidia-driver-update 535.146.02
 nvidia-driver-update 550.54.14
 ```
 
-**For AMD cards:**
-- Install version 5.7.3 drivers using the command:
-```sh
-amd-ocl-install 5.7 5.7
-```
-- Install the libamdhip64 library. 
-Run the following commands:
-```sh
-cd /opt/rocm/lib && wget https://github.com/Gddrig/Qubic_Hiveos/releases/download/0.4.1/libamdhip64.so.zip && unzip libamdhip64.so.zip && chmod +rwx /opt/rocm/lib/* && rm libamdhip64.so.zip && cd / && ldconfig
-```
-<br>
-
-> [!IMPORTANT]
-> AMD Version was tested with hiveos version `6.1.0-hiveos` and AMD drivers `5.7.3`. Please take this as minimum requirenments.
-
 ### GPU mining:
 
 Extra config arguments exemple:
