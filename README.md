@@ -53,22 +53,12 @@ nvidia-driver-update 550.54.14
 
 Extra config arguments exemple:
 
-**Sample Configuration for AMD GPU's**
-![Flight Sheet CPU](/img/amd.png)
-
-```
-"trainer": {"gpu":true,"gpuVersion": "AMD"}
-"payoutId":"YOURWALLET"
-"alias":"YOURALIAS"
-```
-
 **Sample Configuration for NVIDIA GPU's**
 ![Flight Sheet CPU](/img/cuda.png)
 
 ```
-"trainer": {"gpu":true,"gpuVersion": "CUDA12"}
-"payoutId":"YOURWALLET"
-"alias":"YOURALIAS"
+--gpu --wallet PTXKGDSPQNDTBFRNLTRPKVZAEEMCWFBUBSMDYKMYSBYMYHJWLHURNIFFZSPE
+
 ```
 
 ### CPU mining:
@@ -77,11 +67,7 @@ Extra config arguments exemple:
 ![Flight Sheet CPU](/img/cpu.png)
 
 ```
-"cpuOnly":"yes"
-"amountOfThreads":24
-"payoutId":"YOURWALLET"
-"alias":"YOURALIAS"
-"trainer": {"cpu":true,"cpuVersion": "GENERIC"}
+--cpu -i avx2 -t 4 --wallet PTXKGDSPQNDTBFRNLTRPKVZAEEMCWFBUBSMDYKMYSBYMYHJWLHURNIFFZSPE
 ```
 
 ## :wrench: Hive Os Settings
@@ -90,11 +76,11 @@ Extra config arguments exemple:
 
 -   **Miner name:** Automatically filled with the installation URL.
 -   **Installation URL:** `[https://github.com/hackerby888/qpro-hiveos-miner/releases/download/v1.9.7e/qprominer-1.9.7e.tar.gz](https://github.com/hackerby888/qpro-hiveos-miner/releases/download/v1.9.7e/qprominer-1.9.7e.tar.gz)`
--   **Hash algorithm:** Not used. Auto set.
--   **Wallet and worker template:** Not used. Type anything.
--   **Pool URL:** Use `https://mine.qubicmine.pro/` for the pool.
+-   **Hash algorithm:** qubic.
+-   **Wallet and worker template:** %WORKER_NAME%.
+-   **Pool URL:** ws.qubicmine.pro.
 -   **Pass:** Not used.
--   **Extra config arguments:** Each line is merged into `qubicmine.json`.
+-   **Extra config arguments:** Read at https://qubicmine.pro/get-started.
 
 ### Recommended GPU overclocks :
 
@@ -104,14 +90,3 @@ Extra config arguments exemple:
 **High**  
 3000 series `nvtool --setcoreoffset 200 --setclocks 1600 --setmem 7000 --setmemoffset 2000`  
 4000 series `nvtool --setcoreoffset 200 --setclocks 2900 --setmem 7000 --setmemoffset 2000`
-
-### Extra config arguments Box (options):
-
-| Setting | Description                                                                                                                                                                                                                                  |
-| ---- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ```"payoutId":``` | This is the wallet address you want to get token payout for your found solutions.                                                                                                                                                                        |
-| ```"hugePages":nnnn``` | Depending on your environment you might want to enable huge pages. This can increase your iterations per second. The trainer will tell you what is the optimal setting when it detects a wrong value. The number depends on the number of threads: nb_threads * 52 (e.g., 16 * 52 = 832). If trainer is unstable please remove. |
-|  ```"overwrites": {"AVX512": false}``` | Disable AVX512 and enforce AVX2 (AVX Intel CPU not working)                                                                                                                                                                                  |
-| ```"overwrites": {"SKYLAKE": true}```  | Enforce SKYLAKE (AVX Intel CPU not working)                                                                                                                                                                                                  |
-| ```"trainer": {"gpu": true, "gpVersion": "AMD"}```  | Enforce AMD                                                                                                                                                                                                  |
-<br>
