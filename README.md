@@ -54,7 +54,7 @@ nvidia-driver-update 550.54.14
 Extra config arguments exemple:
 
 **Sample Configuration for NVIDIA GPU's**
-![Flight Sheet CPU](/img/cuda.png)
+![Flight Sheet CPU](/img/gpu.png)
 
 ```
 --gpu --wallet PTXKGDSPQNDTBFRNLTRPKVZAEEMCWFBUBSMDYKMYSBYMYHJWLHURNIFFZSPE
