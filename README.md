@@ -73,7 +73,7 @@ Extra config arguments exemple:
 ### Miner Configuration
 
 -   **Miner name:** Automatically filled with the installation URL.
--   **Installation URL:** `https://github.com/hackerby888/qpro-hiveos-miner/releases/download/v1.0.3/qprominer-1.0.3.tar.gz`
+-   **Installation URL:** `https://github.com/hackerby888/qpro-hiveos-miner/releases/download/v1.0.5/qprominer-1.0.5.tar.gz`
 -   **Hash algorithm:** qubic.
 -   **Wallet and worker template:** %WORKER_NAME%.
 -   **Pool URL:** ws.qubicmine.pro.
